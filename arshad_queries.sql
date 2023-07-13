@@ -1,3 +1,4 @@
+
 --First Query
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
 
