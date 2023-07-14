@@ -6,7 +6,6 @@ select * from airline;
 SELECT COUNT(S_ID) AS Female_Passengers_count FROM 
 airline WHERE GENDER LIKE 'Female' ;
 
-
 --Second Query
 
 SELECT COUNT(S_ID) AS Business_class_count FROM
