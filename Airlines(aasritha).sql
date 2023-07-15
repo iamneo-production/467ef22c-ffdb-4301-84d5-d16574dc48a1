@@ -29,3 +29,4 @@ airline WHERE  age<13;
  SELECT COUNT(S_ID) AS Business_class_count_above16 FROM 
 AIRLINE WHERE age>16 and CLASS='Business';   
 
+
