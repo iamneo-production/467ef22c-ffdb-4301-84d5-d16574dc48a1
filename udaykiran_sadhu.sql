@@ -1,23 +1,23 @@
 --Query 1
-SELECT COUNT(*) AS female_passenger_count
+SELECT COUNT(*) AS female_passengers_count
 FROM AIRLINE
 WHERE GENDER = 'Female';
 
 
 --Query 2
-SELECT COUNT(*) AS business_class_passenger_count
+SELECT COUNT(*) AS business_class_passengers_count
 FROM AIRLINE
 WHERE CLASS = 'Business';
 
 
 --Query 3
-SELECT COUNT(*) AS economy_class_passenger_count
+SELECT COUNT(*) AS economy_class_passengers_count
 FROM AIRLINE
 WHERE CLASS = 'Eco';
 
 
 --Query 4
-SELECT COUNT(*) AS child_passenger_count
+SELECT COUNT(*) AS child_passengers_count
 FROM AIRLINE
 WHERE AGE < 13;
 
