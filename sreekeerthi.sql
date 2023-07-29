@@ -11,6 +11,7 @@ SELECT COUNT(*) child_Passenger_Count from AIRLINE WHERE AGE < 13;
 -- fifth ques
 SELECT COUNT(*) Passenger_Above_16_age_Business_class_Count from AIRLINE WHERE AGE > 16 and CLASS='Business';
 
+
 -- Optimised Queries
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
 SELECT COUNT(*) AS business_class_passenger_count FROM AIRLINE WHERE CLASS = 'Business';
