@@ -1,3 +1,5 @@
+set timing on;
+
 SELECT 
 
 SUM(CASE WHEN gender = 'Female' THEN 1 ELSE 0 END) AS Female_Passengers_Count, --1st query
