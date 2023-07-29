@@ -1,8 +1,4 @@
 --My Queries
-
-WITH business AS (
-  SELECT 'Business' AS business
-);
 --First Query
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
 --Second Query
