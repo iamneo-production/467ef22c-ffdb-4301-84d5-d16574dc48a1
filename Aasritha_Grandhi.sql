@@ -1,5 +1,4 @@
 set timing on;
-select * from airline;
 
 ---First Query
 
