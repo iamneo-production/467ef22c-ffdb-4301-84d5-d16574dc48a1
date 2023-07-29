@@ -1,4 +1,5 @@
 --My Queries
+set timing on;
 --First Query
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
 --Second Query
