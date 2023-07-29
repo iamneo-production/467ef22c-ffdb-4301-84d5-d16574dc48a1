@@ -9,11 +9,7 @@ SELECT COUNT(CLASS) as economy_Class_passenger_count from AIRLINE WHERE CLASS='E
 -- Fourth ques
 SELECT COUNT(*) as child_Passenger_Count from AIRLINE WHERE AGE < 13;
 -- fifth ques
-<<<<<<< HEAD
-SELECT COUNT(*) Passenger_Above_16_age_Business_class_Count from AIRLINE WHERE AGE > 16 and CLASS='Business';
-=======
 SELECT COUNT(*) as Passenger_Above_16_age_Business_class_Count from AIRLINE WHERE AGE > 16 and CLASS='Business';
->>>>>>> origin/Oracle-Workspace-sree-keerthi-annam
 
 -- Optimised Queries
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
