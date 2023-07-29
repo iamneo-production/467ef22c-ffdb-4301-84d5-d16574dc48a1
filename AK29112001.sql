@@ -12,16 +12,16 @@ FROM
 --OPTIMIZED QUERIES
 
 -- 1. query to find the number of female passengers who have made bookings for air tickets
-SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
+SELECT COUNT(S_ID) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
 
 -- 2. query to find the total number of passengers who have made bookings for air tickets
-SELECT COUNT(*) AS business_class_passenger_count FROM AIRLINE WHERE CLASS = 'Business';
+SELECT COUNT(S_ID) AS business_class_passenger_count FROM AIRLINE WHERE CLASS = 'Business';
 
 -- 3. query to find number of economy class passengers
-SELECT COUNT(*) AS economy_class_passenger_count FROM AIRLINE WHERE CLASS = 'Eco';
+SELECT COUNT(S_ID) AS economy_class_passenger_count FROM AIRLINE WHERE CLASS = 'Eco';
 
 -- 4. query to find the number of children who are all booked tickets
-SELECT COUNT(*) AS child_passenger_count FROM AIRLINE WHERE AGE < 13;
+SELECT COUNT(S_ID) AS child_passenger_count FROM AIRLINE WHERE AGE < 13;
 
 -- 5. query to find count of passengers who are above the age of 16 and have booked tickets in the business class
-SELECT COUNT(*) AS passengers_above_16_in_business_class_count FROM AIRLINE WHERE AGE > 16 AND CLASS = 'Business';
+SELECT COUNT(S_ID) AS passengers_above_16_in_business_class_count FROM AIRLINE WHERE AGE > 16 AND CLASS = 'Business';
