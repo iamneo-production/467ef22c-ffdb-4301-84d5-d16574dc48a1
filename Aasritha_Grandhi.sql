@@ -31,7 +31,8 @@ SELECT COUNT(CLASS) AS Business_class_count_above16 FROM
 AIRLINE WHERE age>16 and CLASS='Business';   
 
 
---OPTIMIzED QUERIES
+--OPTIMIZED QUERIES
+--Final
 
 ---First Query
 SELECT COUNT(*) AS female_passenger_count
