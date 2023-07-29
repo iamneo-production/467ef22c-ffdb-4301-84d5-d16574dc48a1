@@ -1,6 +1,6 @@
 --My Queries
 set timing on;
-VARIABLE business VARCHAR(10);
+VARIABLE business VARCHAR2(10);
 EXEC :business := 'Business';
 --First Query
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
