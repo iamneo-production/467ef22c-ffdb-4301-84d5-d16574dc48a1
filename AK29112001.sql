@@ -1,10 +1,10 @@
 
 SELECT  
     COUNT(CASE WHEN GENDER = 'Female' THEN 1 END) AS FEMALE_PASSENGERS, 
-    COUNT(CASE WHEN CLASS = 'Business' THEN 1 END) AS BUSINESS_COUNT, 
-    COUNT(CASE WHEN CLASS = 'Eco' THEN 1 END) AS ECONOMY_COUNT,
-    COUNT(CASE WHEN AGE < 13 THEN 1 END) AS CHILDREN_BELOW_13, 
-    COUNT(CASE WHEN AGE > 16 AND CLASS = 'Business' THEN 1 END) AS BUSINESS_WITH_AGE_ABOVE_16 
+    COUNT(CASE WHEN CLASS = 'Business' THEN 1 END) AS BUSINESS_CLASS_COUNT, 
+    COUNT(CASE WHEN CLASS = 'Eco' THEN 1 END) AS ECONOMY_CLASS_COUNT,
+    COUNT(CASE WHEN AGE < 13 THEN 1 END) AS CHILDREN_COUNT, 
+    COUNT(CASE WHEN AGE > 16 AND CLASS = 'Business' THEN 1 END) AS BUSINESS_CLASS_PASSENGERS_ABOVE_16 
 FROM    
     airline;
 
@@ -24,4 +24,4 @@ SELECT COUNT(*) AS economy_class_passenger_count FROM AIRLINE WHERE CLASS = 'Eco
 SELECT COUNT(*) AS child_passenger_count FROM AIRLINE WHERE AGE < 13;
 
 -- 5. query to find count of passengers who are above the age of 16 and have booked tickets in the business class
-SELECT COUNT(*) AS passengers_above_16_in_business_class_count FROM AIRLINE WHERE AGE > 16 AND CLASS = 'Business';
+SELECT COUNT(*) AS passengers_above_16_in_business_class_count FROM AIRLINE WHERE AGE > 16 AND CLASS = 'Business';
