@@ -5,7 +5,7 @@ variable myconstant varchar2(20);
 exec :myconstant:='Business';
  
 
---first query--
+--first query--  
 
 SELECT COUNT(GENDER) AS Femalepassengers 
 FROM airline WHERE GENDER='Female';
