@@ -31,7 +31,7 @@ FROM airline WHERE AGE<13;
 SELECT COUNT(CLASS) AS Businessclass_above16
 FROM airline WHERE age>16 and CLASS=:myconstant;
 
---OPTIMIZED QUERIES
+--OPTIMIZED QUERIES--
 
 --First Query
 SELECT COUNT(*) AS female_passenger_count FROM AIRLINE WHERE GENDER = 'Female';
