@@ -3,7 +3,7 @@ set timing on;
 
 variable myconstant varchar2(20);
 exec :myconstant:='Business';
-
+ 
 
 --first query--
 
